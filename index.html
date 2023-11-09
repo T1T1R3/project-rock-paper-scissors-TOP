@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper & Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="content">
+        <div class="header">ROCK PAPER & SCISSORS</div>
+        <div class="main">
+            <div class="playerSide">
+                <div class="playerWinner" style="display: none;">WINNER!!!</div>
+                <div class="playerLooser" style="display: none;">LOSER!!!</div>
+                <div class="playerScore">SCORE: <tag id="playerScore"></tag></div>
+                <div class="playerName">PlayerName</div>
+                <div class="playerAvatar"><img src="./images/playerAvatar.png"></div>
+                <div class="playerOptions">
+                    <button class="rockOption"><img src="./images/rock.png"></button>
+                    <button class="paperOption"><img src="./images/paper.png"></button>
+                    <button class="scissorOption"><img src="./images/scissors.png"></button>
+                </div>
+            </div>
+            <div class="centralSide">
+                <div>PLAYER</div>
+                <div class="playerChoose"></div>
+                <div class="vsIcon"><img class="specificImage"src="./images/vsIcon.png"></div>
+                <div class="cpuChoose"></div>
+                <div>CPU</div>
+            </div>
+            <div class="cpuSide">
+                <div class="cpuWinner" style="display: none;">WINNER!!!</div>
+                <div class="cpuLooser" style="display: none;">LOSER!!!</div>
+                <div class="playerScore">SCORE: <tag id="cpuScore"></tag></div>
+                <div class="playerName">CPU</div>
+                <div class="playerAvatar"><img src="./images/robot.png"></div>
+                <div class="playerOptions">
+                    <button class="restartOption">RESTART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
