@@ -113,12 +113,12 @@ function restart(){
 function setPlayerScore(value, selection){
     if(selection === 1){
         playerScore.textContent = `${value}`;
-        if(player > 10){
+        if(player >= 10){
             showHideDiv(1, 1);
         }
     }
     else if(selection === 2){
-        if(cpu > 10){
+        if(cpu >= 10){
             showHideDiv(1, 2);
         }
         cpuScore.textContent = `${value}`;
