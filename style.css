@@ -11,159 +11,504 @@ html, body{
     color: white;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+@media screen and (min-width:1920px){
+
+    .header{
+        background-color: rgb(65, 65, 65);
+        width: 100%;
+        min-height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        background-color: #2D2D2D;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        max-height: 865px;
+        min-height: 865px;
+    }
+
+    .playerScore, .playerName{
+        font-weight: 900;
+        font-size: 30px;
+    }
+    
+    .playerOptions .restartOption{
+        font-size: 20px;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .playerSide, .centralSide, .cpuSide{
+        flex:1;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .playerSide, .cpuSide{
+        background-color: #2D2D2D;
+    }
+    
+    .centralSide{
+        background-color: rgb(65, 65, 65);
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        margin-top: 0px;
+    }
+    
+    .playerSide, .cpuSide{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap:10px;
+        padding:70px 0px 100px;
+    }
+    
+    .playerOptions{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .playerOptions button{
+        background-color: rgb(65, 65, 65);
+        box-shadow: none;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    
+    .playerOptions img{
+        width: 20%;
+    }
+    
+    
+    img{
+        width: 50%;
+        transition: .5s ease;
+    }
+    img:hover{
+        opacity: 0.3;
+    
+    }
+    
+    button{
+        width: 50%;
+        transition: .5s ease;
+        cursor:pointer;
+    }
+    button:hover{
+        opacity: 0.3;
+    
+    }
+    
+    button:active{
+        background-color: gray;
+        transition: ease;
+        opacity: 1;
+    }
+    
+    button:active img{
+        opacity: 1;
+    }
+    
+    .playerAvatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .playerName:hover{
+        color: rgb(128, 128, 128);
+    }
+    
+    .playerScore:hover{
+        color: rgb(255, 255, 0);
+    }
+    
+    .centralSide{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    .vsIcon{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+    
+    .specificImage:hover{
+        opacity: 100%;
+    }
+    
 }
 
-.header{
-    background-color: rgb(65, 65, 65);
-    width: 100%;
-    min-height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
+@media screen and (max-width:1366px){
+
+    .header{
+        background-color: rgb(65, 65, 65);
+        width: 100%;
+        min-height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        background-color: #2D2D2D;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        max-height: 405px;
+        min-height: 503px;
+    }
+
+    .playerScore, .playerName{
+        font-weight: 900;
+        font-size: 20px;
+    }
+    
+    .playerOptions .restartOption{
+        font-size: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .playerSide, .centralSide, .cpuSide{
+        flex:1;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .playerSide, .cpuSide{
+        background-color: #2D2D2D;
+    }
+    
+    .centralSide{
+        background-color: rgb(65, 65, 65);
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        margin-top: 0px;
+    }
+    
+    .playerSide, .cpuSide{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap:10px;
+        padding:70px 0px 100px;
+    }
+
+    .playerOptions{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .playerOptions button{
+        background-color: rgb(65, 65, 65);
+        box-shadow: none;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    
+    .playerOptions img{
+        width: 20%;
+    }
+    
+    
+    img{
+        width: 50%;
+        transition: .5s ease;
+    }
+    img:hover{
+        opacity: 0.3;
+    
+    }
+    
+    button{
+        width: 50%;
+        transition: .5s ease;
+        cursor:pointer;
+    }
+    button:hover{
+        opacity: 0.3;
+    
+    }
+    
+    button:active{
+        background-color: gray;
+        transition: ease;
+        opacity: 1;
+    }
+    
+    button:active img{
+        opacity: 1;
+    }
+    
+    .playerAvatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .playerName:hover{
+        color: rgb(128, 128, 128);
+    }
+    
+    .playerScore:hover{
+        color: rgb(255, 255, 0);
+    }
+    
+    .centralSide{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    .vsIcon{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+    
+    .specificImage:hover{
+        opacity: 100%;
+    }
+    
 }
 
-.main{
-    background-color: #2D2D2D;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    min-height: 865px;
-    max-height: 865px;
+
+@media screen and (max-width:700px){
+    body{
+        max-width: 400px;
+        padding: 0px 10px 0px;
+        background-color: #2D2D2D;
+    }
+    .header{
+        background-color: rgb(65, 65, 65);
+        width: 106%;
+        min-height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        padding-top: 123px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 106%;
+    }
+
+    .playerScore, .playerName{
+        font-weight: 900;
+        font-size: 15px;
+    }
+    
+    .playerOptions .restartOption{
+        font-size: 20px;
+    }
+
+    .playerSide, .centralSide, .cpuSide{
+        flex:1;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .playerSide, .cpuSide{
+        background-color: #2D2D2D;
+    }
+    
+    .centralSide{
+        background-color: rgb(65, 65, 65);
+        border-radius: 20px;
+        margin-top: 0px;
+    }
+    
+    .playerSide, .cpuSide{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap:0px;
+        padding: 0px 0px 0px;
+    }
+
+    .playerSide .playerAvatar{
+        margin-bottom: 10px;
+    }
+
+    
+    .playerOptions{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .playerOptions button{
+        background-color: rgb(65, 65, 65);
+        box-shadow: none;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    
+    .playerOptions img{
+        width: 20%;
+    }
+    
+    
+    img{
+        width: 20%;
+        transition: .5s ease;
+    }
+    img:hover{
+        opacity: 0.3;
+    
+    }
+    
+    button{
+        width: 50%;
+        transition: .5s ease;
+        cursor:pointer;
+    }
+    button:hover{
+        opacity: 0.3;
+    
+    }
+    
+    button:active{
+        background-color: gray;
+        transition: ease;
+        opacity: 1;
+    }
+    
+    button:active img{
+        opacity: 1;
+    }
+    
+    .playerAvatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .playerName:hover{
+        color: rgb(128, 128, 128);
+    }
+    
+    .playerScore:hover{
+        color: rgb(255, 255, 0);
+
+    }
+    
+    .centralSide{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+        padding: 20px;
+        margin: 30px 20px 20px;
+    }
+    
+    .vsIcon{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        padding: 20px;
+    }
+    
+    .specificImage:hover{
+        opacity: 100%;
+    }
+
+    .playerChoose, .cpuChoose{
+        padding: 20px;
+    }
+    
+    .playerScore{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .cpuScore{
+        margin-top: 0px;
+    }
+
+    .playerName{
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+
+    .cpuSide .playerName{
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .cpuSide .playerOptions button{
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .cpuSide .playerAvatar{
+        margin-bottom: 10px;
+
+    }
+
+    .cpuSide .playerAvatar img{
+        margin-top: 10px;
+        width: 20%;
+    }
 }
 
-.playerSide, .centralSide, .cpuSide{
-    flex:1;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.playerSide, .cpuSide{
-    background-color: #2D2D2D;
-}
-
-.centralSide{
-    background-color: rgb(65, 65, 65);
-    border-radius: 20px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    margin-top: 0px;
-}
-
-.playerSide, .cpuSide{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap:10px;
-    padding:70px 0px 100px;
-}
-
-.playerSide{
-   
-}
-
-.cpuSide{
-
-}
-
-.playerOptions{
-    display: flex;
-    gap: 10px;
-}
-
-.playerOptions button{
-    background-color: rgb(65, 65, 65);
-    box-shadow: none;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-
-.playerOptions img{
-    width: 20%;
-}
-
-
-.playerScore, .playerName{
-    font-weight: 900;
-    font-size: 30px;
-}
-
-.playerOptions .restartOption{
-    font-size: 20px;
-    width: 100%;
-    padding: 30px;
-}
-
-img{
-    width: 50%;
-    transition: .5s ease;
-}
-img:hover{
-    opacity: 0.3;
-
-}
-
-button{
-    width: 50%;
-    transition: .5s ease;
-    cursor:pointer;
-}
-button:hover{
-    opacity: 0.3;
-
-}
-
-button:active{
-    background-color: gray;
-    transition: ease;
-    opacity: 1;
-}
-
-button:active img{
-    opacity: 1;
-}
-
-.playerAvatar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.playerName:hover{
-    color: rgb(128, 128, 128);
-}
-
-.playerScore:hover{
-    color: rgb(255, 255, 0);
-}
-
-.centralSide{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
-}
-
-.vsIcon{
-    display: flex;
-    justify-content: center;
-    width: 40%;
-}
-
-.specificImage:hover{
-    opacity: 100%;
-}
 
